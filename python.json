@@ -1,0 +1,15 @@
+{
+	"fpr": {
+        "prefix": "fpr",
+        "body": [
+            "#fpr",
+            "print('\\033[36m' + '#' * 50 + '\\x1b[0m')",
+            "print('\\033[35m' + 'File: $TM_DIRECTORY/$TM_FILENAME | Line: $TM_LINE_NUMBER' + '\\x1b[0m')",
+            "_$CLIPBOARD=$CLIPBOARD",
+            "print('\\33[100m', f\"{_$CLIPBOARD  = } \", '\\033[0m', sep='')",
+            "print('\\033[91m' + '#' * 50 + '\\x1b[0m')"
+        ],
+        "description": "fprint"
+    }
+
+}
